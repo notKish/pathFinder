@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "firefox": "91", // Example: Target ESR + recent Chrome/Edge
+          "chrome": "95",
+          "edge": "95"
+          // Or use browserslist syntax: "> 0.5%, last 2 versions, Firefox ESR, not dead"
+        },
+        "useBuiltIns": "usage", // Recommended for extensions
+        "corejs": 3, // Specify core-js version 3
+        "modules": false // Let bundler handle modules
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
